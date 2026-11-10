@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JGU Junk Analysis</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+  <script src="Main.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">PD</span>
+      <div>
+        <h1>JGU Online — Weekly Junk Analysis</h1>
+        <p>Ads Team · follows the documented Junk Analysis Process</p>
+      </div>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="run">Weekly run</button>
+      <button class="tab" data-tab="history">History</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="view" id="view-run">
+      <section class="card" id="week"></section>
+      <section class="card" id="ds-leads"></section>
+      <section class="card" id="ds-enrol"></section>
+      <section class="card" id="ds-apps"></section>
+      <section class="card" id="courses"></section>
+      <section class="card" id="checks"></section>
+      <section class="card" id="report"></section>
+    </div>
+    <div class="view" id="view-history" hidden></div>
+    <div class="view" id="view-settings" hidden></div>
+  </main>
+
+  <div id="toasts"></div>
+</body>
+</html>
